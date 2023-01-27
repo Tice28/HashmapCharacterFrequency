@@ -1,0 +1,6 @@
+This file is used to test this program.
+It will read in all lines used. 
+There is not a limit on the characters used either.
+Special characters can also be used! 
+!@#$%^&*()
+{É♂6k∞╣
