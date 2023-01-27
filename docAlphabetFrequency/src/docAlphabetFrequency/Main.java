@@ -15,21 +15,21 @@ public class Main {
 		String filePath ="src/docAlphabetFrequency/test.txt";				//File path used to determine what file to open
 		String temp;
 
-		Scanner s = new Scanner(new File(filePath)); 						//Scanner object used to import file
+		Scanner s = new Scanner(new File(filePath)); 					//Scanner object used to import file
 		
 		while(s.hasNext()) {
-			temp = s.nextLine();											//Temp reads in next line that is converted to a string
+			temp = s.nextLine();							//Temp reads in next line that is converted to a string
 			for(int i = 0;i<temp.length();i++) {
-				if(freqArray.containsKey(temp.charAt(i))) {					//Checks to see if character has already been logged
+				if(freqArray.containsKey(temp.charAt(i))) {			//Checks to see if character has already been logged
 					int tempInt = freqArray.get(temp.charAt(i))+1;
 					freqArray.replace(temp.charAt(i), tempInt);
-				} else {													//Adds character if it has not been logged
+				} else {							//Adds character if it has not been logged
 					freqArray.put(temp.charAt(i), 1);
 				}
 			}
 			
 		}
-		System.out.println(freqArray.toString());							//Prints resulting hashmap
+		System.out.println(freqArray.toString());					//Prints resulting hashmap
 	}
 
 }
